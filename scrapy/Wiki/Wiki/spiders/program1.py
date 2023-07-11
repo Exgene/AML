@@ -1,6 +1,5 @@
 import scrapy
 
-
 class WikiSearch(scrapy.Spider):
     name = "program1"
     start_urls = ["https://nitte.edu.in/"]
@@ -19,11 +18,11 @@ class WikiSearch(scrapy.Spider):
         paragraphs = response.css('p::text').getall()
 
         # Save images to a file
-        with open('images.txt', 'w') as file:
+        with open('imagescpy.txt', 'w') as file:
             for image in images:
                 file.write(image+'\n')
 
         # Saving paragraphs to a file
-        with open('paragraphs.txt', 'w') as file:
+        with open('paragraphscpy.txt', 'w') as file:
             for para in paragraphs:
                 file.write(para+'\n')

@@ -1,4 +1,4 @@
-# Scrapy settings for Wiki project
+# Scrapy settings for Test project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,17 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "Wiki"
+BOT_NAME = "Test"
 
-SPIDER_MODULES = ["Wiki.spiders"]
-NEWSPIDER_MODULE = "Wiki.spiders"
+SPIDER_MODULES = ["Test.spiders"]
+NEWSPIDER_MODULE = "Test.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "Wiki (+http://www.yourdomain.com)"
+#USER_AGENT = "Test (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "Wiki.middlewares.WikiSpiderMiddleware": 543,
+#    "Test.middlewares.TestSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "Wiki.middlewares.WikiDownloaderMiddleware": 543,
+#    "Test.middlewares.TestDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "Wiki.pipelines.WikiPipeline": 300,
+#    "Test.pipelines.TestPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
